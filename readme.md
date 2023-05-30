@@ -22,10 +22,8 @@ $ cd convertMyMoney-01 && pnpm install
 
 # Start
 $ pnpm start
-
 # Run dev
 $ pnpm run dev
-
 # Testing
 $ pnpm test
 
