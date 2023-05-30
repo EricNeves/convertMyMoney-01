@@ -5,7 +5,7 @@
 
 Esta é a minha versão do projeto <b>Convert My Money</b> proposto pelo curso Fullstack Master da plataforma [Devpleno](https://devpleno.com/). O projeto tem como objetivo calcular a cotação do dólar.
 
-A aplicação foi desenvolvida com <b>NodeJS, EJS, CSS, Jest (Para efetuar testes unitários)</b> e entre outros.
+A aplicação foi desenvolvida com <b>NodeJS, EJS, CSS, Jest (Para efetuar testes unitários)</b> e foram adicionados features como, <b>String.prototype, Intl.NumberFormat </b> entre outros.
 
 ![ScreenshotA](.github/screenA.png)
 ![ScreenshotB](.github/screenB.png)
