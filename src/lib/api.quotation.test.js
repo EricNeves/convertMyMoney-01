@@ -1,6 +1,6 @@
 const axios = require('axios')
 const { 
-  fetchQuotation, extractQuotation 
+  fetchQuotation 
 } = require("./api.quotation")
 
 jest.mock('axios')
@@ -21,3 +21,4 @@ test('fetch quotation', () => {
       expect(response).toEqual(expectedValue)
     })
 })
+

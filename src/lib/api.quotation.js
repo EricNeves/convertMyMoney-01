@@ -11,8 +11,12 @@ async function fetchQuotation() {
 }
 
 async function extractQuotation() {
-  const result = await fetchQuotation()
-  return result.data.USDBRL.high
+  try {
+    const result = await fetchQuotation()
+    return result.data.USDBRL.high
+  } catch (err) {
+    return ''
+  }
 }
 
 module.exports = {
