@@ -1,9 +1,11 @@
 const axios = require('axios')
-const { fetchQuotation } = require("./api.quotation")
+const { 
+  fetchQuotation, extractQuotation 
+} = require("./api.quotation")
 
 jest.mock('axios')
 
-test('should fetch quotation', () => {
+test('fetch quotation', () => {
   const expectedValue = {
     data: {
       USDBRL: {
