@@ -10,7 +10,7 @@ async function fetchQuotation() {
   }
 }
 
-async function extractQuotation() {
+const extractQuotation = ({ fetchQuotation }) => async function () {
   try {
     const result = await fetchQuotation()
     return result.data.USDBRL.high
@@ -21,5 +21,8 @@ async function extractQuotation() {
 
 module.exports = {
   fetchQuotation,
-  extractQuotation
+  extractQuotation: extractQuotation({ fetchQuotation }),
+  pure: {
+    extractQuotation
+  }
 }
