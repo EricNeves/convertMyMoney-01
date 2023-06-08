@@ -6,7 +6,9 @@ String.prototype.isValidValue = function() {
 
 const index = function(req, res) {
   const { quotation, quantity } = req.query
-  
+  if (!quotation || !quantity) { 
+    return res.redirect('/')
+  }
   if (!quotation.isValidValue() || !quantity.isValidValue()) {
     return res.redirect('/')
   }
